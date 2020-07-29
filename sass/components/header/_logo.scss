@@ -1,0 +1,19 @@
+.logo {
+  width: 153px;
+  display: flex;
+  font-family: $font-raleway;
+  font-weight: $bolt;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  &-blue {
+    margin-right: 7px;
+    color: $color-changes;
+  }
+  &-black {
+    color: $color-black;
+  }
+  &-white {
+    color: $color-white;
+  }
+}

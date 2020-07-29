@@ -1,0 +1,72 @@
+.project {
+  margin: -15px;
+  display: flex;
+  flex-wrap: wrap;
+  &-item {
+    background-color: $color-white;
+    cursor: pointer;
+    margin: 15px;
+  }
+}
+.shadow:hover,
+.shadow:focus,
+.project .project-item:hover .changes-text,
+.project .shadow:focus .changes-text {
+  box-shadow: $shadow-pictures;
+  opacity: 1;
+  transform: translateY(0%);
+}
+.project-text {
+  padding-top: 20px;
+  padding-bottom: 19px;
+  padding-left: 23px;
+  padding-right: 23px;
+  border-left: 1px solid#EEEEEE;
+  border-bottom: 1px solid#EEEEEE;
+  border-right: 1px solid#EEEEEE;
+
+  /* #eeeeee */
+}
+.port-title {
+  text-align: left;
+  font-family: $font-roboto;
+  font-weight: $bolt;
+  font-size: 18px;
+  line-height: 2;
+  /* identical to box height, or 200% */
+  letter-spacing: 0.06em;
+  color: $secondary-text-color;
+}
+.port-text {
+  margin-top: 4px;
+  font-family: $font-roboto;
+  color: $primary-text-color;
+  text-align: left;
+  font-weight: $normal;
+  font-size: 16px;
+  line-height: 1.87;
+  /* identical to box height, or 187% */
+  letter-spacing: 0.03em;
+}
+.changes {
+  position: relative;
+  overflow: hidden;
+  &-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 370px;
+    padding: 63px 24px;
+    font-family: $font-roboto;
+    font-weight: $normal;
+    font-size: 18px;
+    line-height: 1.56;
+    /* or 156% */
+    letter-spacing: 0.03em;
+    color: $color-white;
+    background-color: rgba(33, 150, 243, 0.9);
+    opacity: 0;
+    transform: translateY(100%);
+    transition: transform $trans-function;
+  }
+}

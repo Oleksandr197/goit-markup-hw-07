@@ -1,0 +1,25 @@
+.footer-add {
+  width: 231px;
+  margin-top: 8px;
+  font-family: $font-roboto;
+  font-style: normal;
+  font-weight: $normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: $color-white;
+}
+
+.address-footer {
+  margin-top: 9px;
+  color: $primary-text-color;
+}
+.footer-link {
+  color: rgba(255, 255, 255, 0.6);
+  transition: color $trans-function;
+  &:hover,
+  &:focus {
+    color: $color-changes;
+  }
+}

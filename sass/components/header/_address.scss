@@ -1,0 +1,31 @@
+.address-links {
+  display: flex;
+  margin-left: auto;
+  font-family: $font-roboto;
+  font-style: normal;
+  font-weight: $middle;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  & .item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.address-link {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: $primary-text-color;
+  fill: $primary-text-color;
+  transition: color $trans-function, fill $trans-function;
+  &:hover,
+  &:focus {
+    fill: $color-changes;
+    color: $color-changes;
+  }
+}
+
+.marg {
+  margin-right: 10px;
+  fill: currentColor;
+}

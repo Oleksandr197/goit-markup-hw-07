@@ -1,0 +1,23 @@
+.footer {
+  background-color: $footer-color;
+
+  /*  #2F303A */
+}
+.footer-cont {
+  padding-top: 45px;
+  padding-bottom: 28px;
+  display: flex;
+  align-items: baseline;
+}
+.footer-text {
+  padding-top: 18px;
+  padding-bottom: 21px;
+  text-align: center;
+  font-family: $font-roboto;
+  font-weight: $normal;
+  font-size: 12px;
+  line-height: 2;
+  /* or 200% */
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.4);
+}

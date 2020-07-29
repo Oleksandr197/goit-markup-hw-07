@@ -1,0 +1,41 @@
+.site-nav {
+  width: 294px;
+  margin-left: 85px;
+  display: flex;
+  cursor: pointer;
+  .link {
+    position: relative;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: block;
+    color: $secondary-text-color;
+    font-family: $font-roboto;
+    font-weight: $middle;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    transition: color $trans-function;
+  }
+}
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+/* зміна кольору */
+.site-nav .link:hover,
+.site-nav .link:focus,
+.site-nav .link.current {
+  color: $color-changes;
+}
+
+.current::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  left: 0;
+  bottom: 0;
+  border-radius: 2px;
+  background-color: $color-changes;
+  transition: background-color $trans-function;
+}

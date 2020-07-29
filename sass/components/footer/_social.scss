@@ -1,0 +1,39 @@
+.social {
+  width: 206px;
+  margin-left: 69px;
+}
+.text-white {
+  font-family: $font-roboto;
+  font-weight: $bolt;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: $color-white;
+}
+.social-links {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  & .item:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.social-link {
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: $color-white;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color $trans-function;
+  &:hover,
+  &:focus {
+    border-radius: 50%;
+    background-color: $color-changes;
+  }
+}

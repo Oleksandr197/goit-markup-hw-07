@@ -1,0 +1,215 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 528px;
+  height: 581px;
+  padding: 40px;
+  text-align: center;
+  background-color: $color-white;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform $trans-function;
+  box-shadow: $shadow-card;
+  border-radius: 4px;
+}
+.modal-title {
+  margin-bottom: 30px;
+  font-family: $font-roboto;
+  font-style: normal;
+  font-weight: $bolt;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  line-height: 1.15;
+  color: $secondary-text-color;
+}
+.form {
+  margin-top: 30px;
+}
+.button-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-white;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: $color-black;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    color: $color-changes;
+  }
+}
+
+.icon-close {
+  position: absolute;
+  transform: translate(0, 0) scale(1);
+  transition: transform $trans-function;
+  fill: currentColor;
+}
+
+.form-field {
+  position: relative;
+  display: block;
+}
+.form-field:focus-within > .comment-label,
+.comment-input:not(:placeholder-shown) + .comment-label {
+  font-size: 12px;
+  transform: translateY(-30px);
+  color: $color-changes;
+}
+
+.form-input {
+  display: block;
+  padding-top: 12px;
+  padding-right: 18px;
+  padding-bottom: 12px;
+  padding-left: 42px;
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  &:focus {
+    border: 1px solid $color-changes;
+    outline: transparent;
+  }
+}
+
+.form-field:focus-within > .form-label,
+.form-input:not(:placeholder-shown) + .form-label {
+  font-size: 12px;
+  line-height: 1.17;
+  transform: translate(-26px, -38px);
+  color: $color-changes;
+}
+
+.form-label {
+  position: absolute;
+  top: 50%;
+  left: 42px;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  transform: translateY(-50%);
+  color: $primary-text-color;
+  transition: transform $trans-function, color $trans-function,
+    font-size $trans-function;
+}
+
+.icon-modal {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  fill: $secondary-text-color;
+  transform: translateY(-50%);
+  transition: transform $trans-function;
+}
+
+.form-field:focus-within > .icon-modal {
+  fill: $color-changes;
+}
+
+.form-item:not(:first-child) {
+  margin-top: 28px;
+}
+.comment-label {
+  position: absolute;
+  top: 12px;
+  left: 16px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  transform: translate(0, 0);
+  color: $primary-text-color;
+  transition: transform $trans-function, font-size $trans-function;
+}
+
+.comment-input {
+  display: block;
+  padding: 12px 16px;
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+  &:focus {
+    border: 1px solid $color-changes;
+    outline: transparent;
+  }
+}
+
+.checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.checkbox-label {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.label-text {
+  font-family: $font-roboto;
+  font-style: normal;
+  font-weight: $normal;
+  font-size: 14px;
+  line-height: 1.71;
+
+  /* identical to box height, or 171% */
+  letter-spacing: 0.03em;
+  color: $primary-text-color;
+}
+
+.checkbox-link {
+  display: inline-block;
+  font-family: $font-roboto;
+  font-style: normal;
+  font-weight: $normal;
+  font-size: 14px;
+  line-height: 1.71x;
+
+  /* identical to box height, or 171% */
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
+  color: $color-changes;
+}
+
+.checkbox-icon {
+  display: inline-block;
+  margin-right: 7px;
+  width: 16px;
+  height: 15px;
+  background-color: $color-white;
+  border: 2px solid $secondary-text-color;
+  border-radius: 2px;
+}
+
+.checkbox:checked + .checkbox-icon {
+  background-color: $color-changes;
+  border: 2px solid $color-changes;
+  border-radius: 2px;
+  background-image: url(../images/icon-check.svg);
+  background-size: contain;
+  background-origin: border-box;
+}
+
+.button-modal {
+  @extend .button;
+  padding: 10px 55px;
+}
+.form .button-modal {
+  margin-top: 30px;
+}

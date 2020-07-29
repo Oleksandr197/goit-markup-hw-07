@@ -1,0 +1,77 @@
+.team {
+  display: flex;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: $secondary-fon;
+}
+
+.team-box {
+  display: flex;
+  align-items: center;
+  & .item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.team-color {
+  width: 270px;
+  cursor: pointer;
+  border-radius: 0px 0px 4px 4px;
+  background-color: $color-white;
+  box-shadow: $shadow-card;
+}
+
+.team-info {
+  padding-top: 30px;
+  padding-bottom: 24px;
+}
+.team-title {
+  margin-bottom: 10px;
+  font-family: $font-roboto;
+  font-weight: $middle;
+  font-size: 16px;
+  line-height: 1.19;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $secondary-text-color;
+}
+.team-text {
+  margin-bottom: 16px;
+  font-family: $font-roboto;
+  font-weight: $normal;
+  font-size: 16px;
+  line-height: 1.19;
+
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $primary-text-color;
+}
+.team-links {
+  width: 206px;
+  display: flex;
+  margin-left: 32px;
+  margin-right: 32px;
+  & .item:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+.team-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  fill: $color-gray;
+  background-color: $color-white;
+  transition: background-color $trans-function, fill $trans-function;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    fill: $color-white;
+    border-radius: 50%;
+    background-color: $color-changes;
+  }
+}

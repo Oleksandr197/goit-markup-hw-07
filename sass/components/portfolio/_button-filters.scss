@@ -1,0 +1,32 @@
+.button-filters {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & .item:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+.button-changes {
+  font-family: $font-roboto;
+  font-weight: $middle;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  /* identical to box height, or 162% */
+  letter-spacing: 0.03em;
+  background-color: #f5f4fa;
+  color: $secondary-text-color;
+  padding: 6px 22px;
+  border: 0px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: color $trans-function;
+  transition: background-color $trans-function;
+  &:hover,
+  &:focus {
+    box-shadow: $shadow-button;
+    background-color: $color-changes;
+    color: $color-white;
+  }
+}

@@ -1,0 +1,46 @@
+body {
+  background-color: $color-white;
+  color: $primary-text-color;
+}
+a,
+p,
+ul,
+div,
+h1,
+h2,
+h3 {
+  margin: 0px;
+  padding: 0px;
+}
+a {
+  display: block;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+.web-studio {
+  padding-top: 81px;
+}
+.portfolio {
+  padding-top: 174px;
+  padding-bottom: 94px;
+}
+.button {
+  text-align: center;
+  font-family: $font-roboto;
+  font-style: normal;
+  font-weight: $bolt;
+  font-size: 16px;
+  line-height: 1.87;
+  background-color: $color-changes;
+  color: $color-white;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  border: 0px;
+}
